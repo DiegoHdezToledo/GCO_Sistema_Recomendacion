@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Recomendación - Filtrado Colaborativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo-secundario">Sistema de Recomendación</h1>
+  
+
+  <section id="input-section">
+    <label for="fileInput">Matriz:</label>
+    <input type="file" id="fileInput" accept=".txt,.csv" class ="campos-entrada">
+
+    <label for="kInput">Vecinos (k):</label>
+    <input type="number" id="kInput" value="3" min="1" class ="campos-entrada ">
+
+    <label for="predInput">Tipo de predicción:</label>
+    <select id="predInput", class ="campos-entrada">
+      <option value="simple">Simple</option>
+      <option value="media">Diferencia con la media</option>
+    </select>
+
+    <button id="processBtn">Calculo de recomendaciones</button>
+  </section>
+
+  <section id="output-section">
+    <h2>Resultados</h2>
+    <div id="results"></div>
+  </section>
+
+  <script src="script.js"></script>
+  <h3 class="titulo-secundario">Componentes:</h3>
+  <ul class="lista-blanca">
+    <li>Diego Hernández Toledo</li>
+    <li>Jose Suarez Felipe</li>
+  </ul>
+</body>
+</html>
